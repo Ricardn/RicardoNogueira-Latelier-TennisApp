@@ -4,9 +4,8 @@ import PlayerCard from "../player/PlayerCard";
 
 const PlayerList = ({ players }) => {
   return (
-    <div>
-      PlayerList
-      <div>
+    <div className="playerList_container">
+      <div className="playerList_card">
         {players.map((player) => (
           <PlayerCard key={player.id} player={player} />
         ))}

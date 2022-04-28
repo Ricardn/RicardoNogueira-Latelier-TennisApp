@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
+import Skeleton from "../components/skeleton/Skeleton";
 import useSortedData from "../hooks/useSortedData";
-
-import PlayerList from "../components/playerList/PlayerList";
+import SearchBar from "../components/searchBar/SearchBar";
 
 const Home = () => {
   const { sortedData, loading, error } = useSortedData();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <>
+        <Skeleton />
+      </>
+    );
   }
 
   if (error) {
@@ -16,9 +20,8 @@ const Home = () => {
   }
 
   return (
-    <div>
-      Home
-      <PlayerList players={sortedData} />
+    <div className="body_container">
+      <SearchBar players={sortedData} />
     </div>
   );
 };
