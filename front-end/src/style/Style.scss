@@ -1,9 +1,35 @@
-@import "./FontLibrary"; //Include Font Library
-@import "./ColorLibrary"; //Include Color Library
+@import "./fontLibrary"; //Include Font Library
+@import "./colorLibrary"; //Include Color Library
+@import "./player/PlayerModalBig"; //Include Player Modal Big
+@import "./playerList/PlayerList"; //Include Player List
+@import "./player/PlayerCard"; //Include Player Card
+@import "./player/PlayerModal"; //Include Player Modal
+@import "./searchBar"; //Include Search Bar
+@import "./skeleton"; //Include Skeleton
+
+/* Responsive */
+@import "./responsive";
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+}
+
+body,
+html {
+  background: rgb(242, 117, 59);
+  background: linear-gradient(
+    234deg,
+    rgba(242, 117, 59, 1) 15%,
+    rgba(235, 173, 101, 1) 52%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  overflow-x: hidden;
 }

@@ -1,5 +1,39 @@
+@import "./ColorLibrary"; //Include Color Library
+
 //Font-family: 'Montserrat', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 //Font-family: 'Mulish', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $color-orange;
+  span {
+    font-family: "Muli", sans-serif;
+    -webkit-text-stroke: 2.5px #f2753b;
+    -webkit-text-fill-color: white;
+    color: white;
+    font-weight: 700;
+  }
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+h2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-black;
+}
+
+h3 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-orange;
+}
