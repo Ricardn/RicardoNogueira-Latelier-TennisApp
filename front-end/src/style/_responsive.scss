@@ -1,0 +1,417 @@
+@media only screen and (max-device-width: 915px) and (orientation: portrait) {
+  .body_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .body_list {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 100vw;
+    }
+
+    .body_tennisBall {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 915px) and (orientation: landscape) {
+  input {
+    width: 400px !important;
+  }
+  .playerCard_container {
+    width: 400px;
+  }
+  .playerModal_overlay {
+    display: flex !important;
+    margin-top: 80px !important;
+
+    button {
+      margin-top: 340px;
+    }
+    .playerModal_container {
+      width: 400px !important;
+      height: 800px !important;
+      margin-top: 10px;
+    }
+  }
+
+  .loader_skeletonSearch {
+    width: 400px;
+  }
+  .loader_skeletonCard {
+    width: 400px;
+  }
+  .body_tennisBall {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+  input {
+    width: 500px !important;
+  }
+  .playerModal_overlay {
+    display: flex !important;
+    margin-top: 80px !important;
+
+    button {
+      margin-top: 340px;
+    }
+    .playerModal_container {
+      width: 500px !important;
+      height: 800px !important;
+      margin-top: 10px;
+    }
+  }
+
+  .loader_skeletonSearch {
+    width: 500px !important;
+  }
+  .loader_skeletonCard {
+    width: 500px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .playerCard_container {
+    width: 500px;
+
+    .playerCard_card {
+      display: flex;
+
+      .playerCard_cardImage {
+        width: 160px;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          object-position: 0% 1%;
+        }
+      }
+      .playerCard_cardInformations {
+        .playerCard_body {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          h1 {
+            font-size: medium;
+            text-align: start;
+          }
+
+          .playerCard_content {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+            margin-top: 20px;
+          }
+
+          h2 {
+            font-size: small;
+          }
+
+          h3 {
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+  .body_tennisBall {
+    display: none;
+  }
+  .body_list {
+    height: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1300px) {
+  input {
+    width: 500px !important;
+    height: 80px !important;
+  }
+  .playerModal_overlay {
+    display: flex !important;
+    margin-top: 80px !important;
+
+    button {
+      margin-top: 340px;
+    }
+    .playerModal_container {
+      width: 500px !important;
+      height: 800px !important;
+      margin-top: 10px;
+    }
+  }
+
+  .loader_skeletonSearch {
+    width: 500px !important;
+  }
+  .loader_skeletonCard {
+    width: 500px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .playerCard_container {
+    width: 500px;
+
+    .playerCard_card {
+      display: flex;
+
+      .playerCard_cardImage {
+        width: 160px;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          object-position: 0% 1%;
+        }
+      }
+      .playerCard_cardInformations {
+        .playerCard_body {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          h1 {
+            font-size: medium;
+            text-align: start;
+          }
+
+          .playerCard_content {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+            margin-top: 20px;
+          }
+
+          h2 {
+            font-size: small;
+          }
+
+          h3 {
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+  .body_container {
+    display: flex;
+    min-height: 100% !important;
+    width: 100%;
+    justify-content: space-between;
+    .body_list {
+      width: 50%;
+      min-height: 100vh;
+    }
+
+    .body_tennisBall {
+      min-height: 100%;
+      width: 50%;
+      margin-top: 50px;
+      z-index: 0;
+      pointer-events: none;
+      img {
+        display: flex;
+        z-index: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(40%);
+        pointer-events: none;
+        filter: drop-shadow(0 0 2rem black);
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1300px) {
+  input {
+    width: 700px !important;
+    height: 70px !important;
+  }
+  .playerModal_overlay {
+    display: flex !important;
+    margin-top: 80px !important;
+
+    button {
+      margin-top: 340px;
+    }
+    .playerModal_container {
+      width: 500px !important;
+      height: 800px !important;
+      margin-top: 10px;
+    }
+  }
+
+  .playerBigCard_card {
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .playerBigCard_cardImage {
+      z-index: 2;
+      min-height: 100%;
+      width: 350px;
+      img {
+        height: 500px;
+        width: 500px;
+        object-position: bottom;
+        object-fit: scale-down;
+        margin-left: -150px;
+        filter: drop-shadow(0 0 0.75rem black);
+      }
+    }
+
+    .playerBigCard_cardInformations {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: -120px;
+
+      .playerBigCard_cardHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        .playerBigCard_cardName {
+          display: flex;
+          text-align: center;
+          margin-left: 50px;
+          margin-left: -20px;
+          h1 {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            font-size: 4rem;
+            line-height: 50px;
+
+            height: 100%;
+            span {
+              margin-left: 1px;
+              font-size: 4rem;
+            }
+          }
+        }
+        .playerBigCard_cardCountry {
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          margin-top: 10px;
+          height: 120px;
+          img {
+            display: block;
+            margin-left: auto;
+            width: 50px;
+            height: auto;
+          }
+          h2 {
+            text-align: center;
+            font-weight: 600;
+          }
+        }
+      }
+      .playerCard_cardContent {
+        display: flex;
+        align-self: flex-center;
+        margin-top: 10px;
+        padding-right: 10px;
+        justify-content: center;
+
+        .playerCard_cardLeft {
+          width: 150px;
+        }
+        .playerCard_cardMiddle {
+          width: 150px;
+        }
+        .playerCard_cardRight {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .loader_skeletonSearch {
+    width: 700px !important;
+    height: 70px !important;
+  }
+  .loader_skeletonCard {
+    width: 700px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .playerCard_container {
+    width: 700px;
+
+    .playerCard_card {
+      display: flex;
+
+      .playerCard_cardImage {
+        width: 160px;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          object-position: 0% 1%;
+        }
+      }
+      .playerCard_cardInformations {
+        .playerCard_body {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          h1 {
+            font-size: medium;
+            text-align: start;
+          }
+
+          .playerCard_content {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+            margin-top: 20px;
+          }
+
+          h2 {
+            font-size: small;
+          }
+
+          h3 {
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+  .body_container {
+    display: flex;
+    min-height: 100% !important;
+    width: 100%;
+    justify-content: space-between;
+    .body_list {
+      width: 60%;
+      min-height: 100vh;
+    }
+
+    .body_tennisBall {
+      min-height: 100%;
+      width: 50%;
+      margin-top: 50px;
+      z-index: 0;
+      pointer-events: none;
+      img {
+        display: flex;
+        z-index: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(40%);
+        pointer-events: none;
+        filter: drop-shadow(0 0 2rem black);
+      }
+    }
+  }
+}
