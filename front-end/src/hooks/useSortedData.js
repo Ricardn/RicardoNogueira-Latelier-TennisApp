@@ -7,7 +7,6 @@ export default function useSortedData() {
     "https://data.latelier.co/training/tennis_stats/headtohead.json"
   );
 
-  //sort data by players rank
   const [sortedData, setSortedData] = useState([]);
   useEffect(() => {
     if (data) {
