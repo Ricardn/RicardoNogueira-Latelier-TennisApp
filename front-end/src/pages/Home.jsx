@@ -3,15 +3,21 @@ import React from "react";
 import Skeleton from "../components/skeleton/Skeleton";
 import useSortedData from "../hooks/useSortedData";
 import SearchBar from "../components/searchBar/SearchBar";
+import TennisBall from "../images/TennisBall.png";
 
 const Home = () => {
   const { sortedData, loading, error } = useSortedData();
 
   if (loading) {
     return (
-      <>
-        <Skeleton />
-      </>
+      <div className="body_container">
+        <div className="body_list">
+          <Skeleton />
+        </div>
+        <div className="body_tennisBall">
+          <img src={TennisBall} alt="" />
+        </div>
+      </div>
     );
   }
 
@@ -21,7 +27,12 @@ const Home = () => {
 
   return (
     <div className="body_container">
-      <SearchBar players={sortedData} />
+      <div className="body_list">
+        <SearchBar players={sortedData} />
+      </div>
+      <div className="body_tennisBall">
+        <img src={TennisBall} alt="" />
+      </div>
     </div>
   );
 };

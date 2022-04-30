@@ -32,22 +32,26 @@ const PlayerCard = ({ player }) => {
             <img src={player.picture} alt={imageAlt} />
           </div>
           <div className="playerCard_cardInformations">
-            <div className="playerCard_cardName">
-              <h1>
-                {player.firstname} {player.lastname}
-              </h1>
-            </div>
-            <div className="playerCard_cardRank">
-              <h2>rank</h2>
-              <h3>#{player.data.rank}</h3>
-            </div>
-            <div className="playerCard_cardPoints">
-              <h2>points</h2>
-              <h3>{player.data.points}</h3>
-            </div>
-            <div className="playerCard_cardCountry">
-              <h2>country</h2>
-              <h3>{player.country.code}</h3>
+            <div className="playerCard_body">
+              <div className="playerCard_cardName">
+                <h1>
+                  {player.firstname} {player.lastname}
+                </h1>
+              </div>
+              <div className="playerCard_content">
+                <div className="playerCard_cardRank">
+                  <h2>rank</h2>
+                  <h3>#{player.data.rank}</h3>
+                </div>
+                <div className="playerCard_cardPoints">
+                  <h2>points</h2>
+                  <h3>{player.data.points}</h3>
+                </div>
+                <div className="playerCard_cardCountry">
+                  <h2>country</h2>
+                  <h3>{player.country.code}</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>

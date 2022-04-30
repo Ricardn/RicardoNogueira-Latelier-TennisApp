@@ -3,11 +3,10 @@ import { VscChromeClose } from "react-icons/vsc";
 
 import countryCodeToName from "../../utils/countryCodeToName";
 
-const PlayerModal = ({ player, closeModal }) => {
+const PlayerModalBig = ({ player, closeModal }) => {
   const [playerCountry, setPlayerCountry] = useState("");
 
   const weight = player.data.weight.toString().slice(0, 2);
-
   const dataLast = player.data.last ? player.data.last.toString() : "";
 
   useEffect(() => {
@@ -19,27 +18,26 @@ const PlayerModal = ({ player, closeModal }) => {
   }, []);
 
   return (
-    <div className="playerModal_overlay">
-      <div className="playerModal_block">
+    <div className="playerBigModal_overlay">
+      <div className="playerBigModal_block">
         <button onClick={closeModal} className="close-button">
           <VscChromeClose />
         </button>
-        <div className="playerModal_container">
-          <div className="playerCard_card">
-            <div className="playerCard_cardImage">
-              <div className="playerCard_cardCountry">
-                <img src={player.country.picture} alt="" />
-                <h2>{player.country.code}</h2>
-              </div>
+        <div className="playerBigModal_container">
+          <div className="playerBigCard_card">
+            <div className="playerBigCard_cardImage">
               <img src={player.picture} />
             </div>
-
-            <div className="playerCard_cardInformations">
-              <div className="playerCard_cardHeader">
-                <div className="playerCard_cardName">
+            <div className="playerBigCard_cardInformations">
+              <div className="playerBigCard_cardHeader">
+                <div className="playerBigCard_cardName">
                   <h1>
                     <span>{player.firstname}</span> {player.lastname}
                   </h1>
+                </div>
+                <div className="playerBigCard_cardCountry">
+                  <img src={player.country.picture} alt="" />
+                  <h2>{player.country.code}</h2>
                 </div>
               </div>
               <div className="playerCard_cardContent">
@@ -80,6 +78,12 @@ const PlayerModal = ({ player, closeModal }) => {
                   <h2>last games</h2>
                   <h3 id="last">{dataLast}</h3>
                 </div>
+                <div className="playerCard_cardMiddle">
+             
+                </div>
+                <div className="playerCard_cardRight">
+                  
+                </div>
               </div>
             </div>
           </div>
@@ -89,4 +93,4 @@ const PlayerModal = ({ player, closeModal }) => {
   );
 };
 
-export default PlayerModal;
+export default PlayerModalBig;
