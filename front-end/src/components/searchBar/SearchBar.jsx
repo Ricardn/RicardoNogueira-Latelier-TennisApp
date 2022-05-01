@@ -4,16 +4,16 @@ import PlayerList from "../playerList/PlayerList";
 const SearchBar = ({ players }) => {
   const [query, setQuery] = useState("");
 
-  const handleChange = (e) => {
-    setQuery(e.target.value);
-  };
-
   const filteredPlayers = players.filter((player) => {
     return (
       player.firstname.toLowerCase().includes(query.toLowerCase()) ||
       player.lastname.toLowerCase().includes(query.toLowerCase())
     );
   });
+  
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+  };
 
   return (
     <div className="body_content">

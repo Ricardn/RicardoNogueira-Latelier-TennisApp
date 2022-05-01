@@ -7,7 +7,6 @@ const PlayerModal = ({ player, closeModal }) => {
   const [playerCountry, setPlayerCountry] = useState("");
 
   const weight = player.data.weight.toString().slice(0, 2);
-
   const dataLast = player.data.last ? player.data.last.toString() : "";
 
   useEffect(() => {
